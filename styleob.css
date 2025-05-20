@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4ff;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.form-box {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.form-left, .form-right {
+  flex: 1;
+  padding: 40px;
+}
+
+.form-left h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+form input:focus {
+  border-bottom: 2px solid #ff6699;
+}
+
+form button {
+  background-color: #ff6699;
+  color: white;
+  font-size: 18px;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #ff3366;
+}
+
+.checkbox {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #666;
+}
+
+.checkbox a {
+  color: #ff6699;
+  text-decoration: none;
+}
+
+.form-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffeef5;
+}
+
+.form-right img {
+  max-width: 100%;
+  height: auto;
+}

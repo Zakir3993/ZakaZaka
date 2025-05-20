@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Каталог товаров</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://i.pinimg.com/736x/a6/ff/f3/a6fff3955db4f31f88ab1ebb49d2519d.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .category-section {
+      padding: 50px 20px;
+      background-color: rgba(255, 255, 255, 0.9); /* белый полупрозрачный фон */
+      margin: 30px auto;
+      max-width: 1200px;
+      border-radius: 20px;
+    }
+
+    .category-title {
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      height: 200px;
+      object-fit: contain;
+    }
+
+    .product-card h3 {
+      font-size: 20px;
+      margin: 10px 0 5px;
+    }
+
+    .product-card p {
+      margin: 5px 0;
+    }
+
+    .product-card button {
+      background-color: #28a745;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .product-card button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Категория 1 -->
+  <section class="category-section">
+    <h2 class="category-title">🎉 Для дней рождения</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="https://i.imgur.com/Xg5zp7G.png" alt="Плакат ко дню рождения" />
+        <h3>Плакат</h3>
+        <p>Цена: 2500₸</p>
+        <button>Купить</button>
+      </div>
+      <div class="product-card">
+        <img src="https://i.imgur.com/GYBGHHZ.png" alt="Корзина со сладостями" />
+        <h3>Корзина со сладостями</h3>
+        <p>Цена: 5000₸</p>
+        <button>Купить</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Категория 2 -->
+  <section class="category-section">
+    <h2 class="category-title">🇰🇿 Национальные подарки</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="https://i.imgur.com/YhT2zv2.png" alt="Национальная одежда" />
+        <h3>Национальная одежда</h3>
+        <p>Цена: 10000₸</p>
+        <button>Купить</button>
+      </div>
+      <div class="product-card">
+        <img src="https://i.imgur.com/Cb3qH7E.png" alt="Домбра миниатюра" />
+        <h3>Мини-домбра</h3>
+        <p>Цена: 3500₸</p>
+        <button>Купить</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Категория 3 -->
+  <section class="category-section">
+    <h2 class="category-title">🛍️ Разное</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="https://i.imgur.com/jXL9UZK.png" alt="Постер с машиной" />
+        <h3>Постер с машиной</h3>
+        <p>Цена: 7500₸</p>
+        <button>Купить</button>
+      </div>
+      <div class="product-card">
+        <img src="https://i.imgur.com/JuRPTeB.png" alt="Фотоальбом" />
+        <h3>Фотоальбом</h3>
+        <p>Цена: 2000₸</p>
+        <button>Купить</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+

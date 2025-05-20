@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блок с отзывами</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .reviews-section {
+            padding: 50px 0;
+        }
+        
+        .reviews-title {
+            text-align: center;
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+        
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .review-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .stars {
+            color: #FFD700;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .review-text {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            min-height: 180px;
+        }
+        
+        .review-author {
+            color: #999;
+            font-size: 14px;
+        }
+        
+        /* Розовые акценты */
+        .review-card {
+            border-top: 3px solid #ff80ab;
+        }
+        
+        .review-text strong {
+            color: #ff4081;
+        }
+        
+        .review-author strong {
+            color: #ff4081;
+        }
+        
+        .buy-button {
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .buy-button:hover {
+            background-color: #e91e63;
+        }
+        
+        .emoticon {
+            font-size: 18px;
+            vertical-align: middle;
+        }
+        
+        /* Адаптивный дизайн */
+        @media (max-width: 992px) {
+            .reviews-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .review-text {
+                min-height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="reviews-section">
+            <h2 class="reviews-title">Отзывы наших клиентов</h2>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★ ★ ★ ★ ★</div>
+                    <p class="review-text">
+                        Очень красивые сувениры! Брала магнит "Казастан" и брелок "Юрта" в подарок родственникам из России, они были в восторге от качества исполнения. Особенно понравились национальные элементы и внимание к деталям. Обязательно буду заказывать ещё!
+                    </p>
+                    <p class="review-author">Айгуль, покупка сувениров</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="stars">★ ★ ★ ★ ★</div>
+                    <p class="review-text">
+                        Заказывала светильник-луну для дочки. Качество супер! Очень приятный теплый свет, регулируется яркость. Дочь в восторге, теперь это ее любимый ночник. Спасибо за оперативную доставку и аккуратную упаковку!
+                    </p>
+                    <p class="review-author">Еркеназ, покупка подарков</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="stars">★ ★ ★ ★ ★</div>
+                    <p class="review-text">
+                        Купил набор LEGO на день рождения племянника. Порадовала быстрая доставка и то, что подарок красиво упаковали. Племянник счастлив, а мне не пришлось бегать по магазинам в поиске подарка. Очень удобный сервис!
+                    </p>
+                    <p class="review-author">Алексей, подарки для детей</p>
+                </div>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★ ★ ★ ★ ★</div>
+                    <p class="review-text">
+                        Заказывал мишку для девушки на годовщину. Пришёл в восторг от качества! Мягкий, приятный на ощупь, с милым бантиком, как на фото. Доставили в назначенное время, упаковка была очень красивой. Девушка счастлива, огромное спасибо за помощь в выборе!
+                    </p>
+                    <p class="review-author">Марат, покупка подарков</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="stars">★ ★ ★ ★ ★</div>
+                    <p class="review-text">
+                        Покупала декоративную елку в офис. Смотрится очень стильно и празднично. Коллеги оценили! Радует, что можно найти такие необычные вещи, которых нет в обычных магазинах. Отдельное спасибо консультанту за помощь в выборе.
+                    </p>
+                    <p class="review-author"> Гульназ, декор для офиса</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="stars">★ ★ ★ ★ ★</div>
+                    <p class="review-text">
+                        Долго выбирал подарок маме на юбилей и остановился на фоторамке с вашего сайта. Удобно, что можно оформить доставку прямо имениннику. Всё дошло быстро, мама была тронута таким вниманием. Теперь буду постоянным клиентом! Рекомендую всем!
+                    </p>
+                    <p class="review-author">Никита, подарки для близких</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

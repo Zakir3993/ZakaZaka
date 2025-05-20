@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог подарков</title>
+
+
+  <link rel="stylesheet" href="stylecat.css">
+
+</head>
+<body>
+  <section class="catalog">
+    <div class="container">
+      <h1 class="catalog-title">Каталог подарков</h1>
+<button id="theme-toggle" onclick="toggleTheme()" style="margin-bottom: 20px;">🌙 Тёмная тема</button>
+
+<i class="bi bi-bag-dash"></i></button>
+  <button onclick="showCart()">🛒 <span id="cart-count">0</span></button>
+      
+      <div class="category">
+        <h2>Для дней рождения</h2>
+        <div class="products">
+          <div class="product-card">
+            <img src="https://ir-3.ozone.ru/s3/multimedia-1-5/wc1000/7399372901.jpg" alt="Подарок 1">
+            <h3>Набор «Веселье»</h3>
+            <p>Идеально для вечеринки.</p>
+             <p>Цена: 2000₸</p>
+           <button class="buy-btn" data-name="Набор «Веселье»" data-price="2000">Купить</button>
+
+          </div>
+          <div class="product-card">
+            <img src="https://th.bing.com/th/id/R.bcfb88206464c567706fa792c4a67824?rik=PmQ5NIu8yEJHTQ&pid=ImgRaw&r=0" alt="Подарок 2">
+            <h3>Кружка с именем</h3>
+            <p>Именной подарок для друга.</p>
+             <p>Цена: 2000₸</p>
+            <button class="buy-btn" data-name="Именной подарок для друга.»" data-price="2000">Купить</button>
+          </div>
+          <div class="product-card">
+            <img src="https://th.bing.com/th/id/OIP._X76qxq-80eP4_l2MxbdMgHaHa?rs=1&pid=ImgDetMain" alt="Подарок 3">
+            <h3>Шарики-сюрпризы детские</h3>
+            <p>Яркие эмоции на праздник.</p>
+             <p>Цена: 1 000₸</p>
+            <button class="buy-btn" data-name="Шарики-сюрпризы детские" data-price="1500">Купить</button>
+         
+
+          </div>
+          
+          <div class="product-card">
+            <img src="https://albom.com.ua/resources/pages/photo_albums/album_description-5.jpg" alt="Подарок 5">
+            <h3>Фото альбом</h3>
+            <p>На память о событии.</p>
+             <p>Цена: 3 500₸</p>
+           <button class="buy-btn" data-name="Фото-Альбом»" data-price="3500">Купить</button>
+          </div>
+        </div>
+      </div>
+<!-- Раздел: Национальные сувениры -->
+      <div class="category">
+        <h2>Национальные сувениры</h2>
+        <div class="products">
+          <div class="product-card">
+            <img src="https://th.bing.com/th/id/OIP.H87naeOKndi4hPOSifBsbgHaGH?cb=iwp2&rs=1&pid=ImgDetMain" alt="Сувенир 1">
+            <h3>Брелок "Юрта"</h3>
+            <p>Символ гостеприимства.</p>
+             <p>Цена: 2 000₸</p>
+            <button class="buy-btn" data-name="Брелок Юрта»" data-price="2000">Купить</button>
+          </div>
+          <div class="product-card">
+            <img src="https://etnobazar.pl/pol_pm_TIUBIETIEJKA-TRADYCYJNA-KIRGISKA-CZAPKA-KRYMKA-FOLKLOR-KIRGISTAN-22686_5.jpg" alt="Сувенир 2">
+            <h3>Казахский народный головной убор "Тақия"</h3>
+            <p>Традиционный элемент.</p>
+             <p>Цена: 3 000₸</p>
+            <button class="buy-btn" data-name="Такия»" data-price="3000">Купить</button>
+           
+            
+          </div>
+          <div class="product-card">
+            <img src="https://resources.cdn-kaspi.kz/img/m/p/hb2/h43/87187388563486.jpg?format=gallery-large" alt="Сувенир 3">
+            <h3>Магнит «Казастан»</h3>
+            <p>На холодильник с душой.</p>
+             <p>Цена: 1 500₸</p>
+            <button class="buy-btn" data-name="Магнит Казахстан»" data-price="1500">Купить</button>
+          </div>
+          <div class="product-card">
+            <img src="https://img2.festima.ru/1/wGdf0oSKeCveNwQWV" alt="Сувенир 4">
+            <h3>Брелок «Домбра»</h3>
+            <p>Ключ к традициям.</p>
+             <p>Цена: 1 000₸</p>
+            <button class="buy-btn" data-name="Брелок Домбра»" data-price="1000">Купить</button>
+          </div>
+          <div class="product-card">
+            <img src="https://old2.kspi.kz/images/articles/facultets/museum/zeren.jpg" alt="Сувенир 5">
+<h3>Казахская национальная посуда</h3>
+            <h4>Национальная казахская посуда сделанное из дерева</h4>
+             <p>Цена: 10 000₸</p>
+            <button class="buy-btn" data-name="Казахская Национальная посуда»" data-price="10000">Купить</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Раздел: Разное -->
+      <div class="category">
+        <h2>Разное</h2>
+        <div class="products">
+          <div class="product-card">
+            <img src="https://th.bing.com/th/id/OIP.G5a93ySmJGMKk3lHjNMzJgHaI_?cb=iwp2&rs=1&pid=ImgDetMain" alt="Подарок 1">
+            <h3>Корзина со сладостями</h3>
+            <p>Порадуйте знакомого который без ума от сладостей.</p>
+             <p>Цена: 5 000₸</p>
+            <button class="buy-btn" data-name="Корзина со сладостями»" data-price="5000">Купить</button>
+          </div>
+          <div class="product-card">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2024/5/421566095/DU/RL/SN/151213209/moon-ball-bouncy-coral-anti-stress-bouncing-for-kids-soft-rubber-bounce-set-playground-gift-boys-girl-1000x1000.jpg" alt="Подарок 2">
+            <h3>Антистресс мяч</h3>
+            <p>Снимает стресс и усталость.</p>
+             <p>Цена: 500₸</p>
+            <button class="buy-btn" data-name="Мяч Антистресс»" data-price="500">Купить</button>
+          </div>
+          <div class="product-card">
+            <img src="https://th.bing.com/th/id/OIP.4U67q25R1cWFj-Clx5LzNgHaKe?cb=iwp2&w=2115&h=2990&rs=1&pid=ImgDetMain" alt="Подарок 3">
+            <h3>Постеры с машиной под заказ</h3>
+            <p>Яркий дизайн и память.</p>
+             <p>Цена: 7 500₸</p>
+            <button class="buy-btn" data-name="Постеры с машиной»" data-price="7500">Купить</button>
+          </div>
+          <div class="product-card">
+            <img src="https://th.bing.com/th/id/OIP.meDouj7t_utULrdAYuCSLwAAAA?cb=iwp2&rs=1&pid=ImgDetMain" alt="Подарок 4">
+            <h3>Светильник-луна</h3>
+            <p>Теплый ночной свет.</p>
+             <p>Цена: 3 000₸</p>
+            <button class="buy-btn" data-name="Светильник Луна»" data-price="3000">Купить</button>
+          </div>
+          <div class="product-card">
+            <img src="https://th.bing.com/th/id/OIP.3-R8Pwa90VbSOS-KjnSMKgHaJV?w=158&h=198&c=7&r=0&o=7&cb=iwp2&dpr=1.3&pid=1.7&rm=3" alt="Подарок 5">
+            <h3>Мишка</h3>
+            <p>Мягкая мишка которая порадует любую девушку.</p>
+             <p>Цена: 6 000₸</p>
+            <button class="buy-btn" data-name="Мишка" data-price="6000">Купить</button>
+          </div>
+         
+        </div>
+      </div>
+
+    </div>
+  </section>
+<div class="cart-toggle">
+  <button onclick="showCart()">🛒 <span id="cart-count">0</span></button>
+</div>
+
+<div id="cart-summary" class="cart">
+  <h3>Корзина</h3>
+  <ul id="cart-items"></ul>
+  <p><strong>Сумма:</strong> <span id="total-price">0</span>₸</p>
+  <button onclick="checkout()">Оформить заказ</button>
+</div>
+
+
+<script>
+  let cart = [];
+
+  // Найдём элементы после их загрузки
+  const cartItems = document.getElementById("cart-items");
+  const cartCount = document.getElementById("cart-count");
+  const totalPriceEl = document.getElementById("total-price");
+  const cartDiv = document.getElementById("cart-summary");
+
+  document.querySelectorAll(".buy-btn").forEach(button => {
+    button.addEventListener("click", () => {
+      const name = button.dataset.name;
+      const price = parseInt(button.dataset.price);
+
+      cart.push({ name, price });
+      updateCart();
+    });
+  });
+
+  function updateCart() {
+    cartItems.innerHTML = "";
+    let total = 0;
+
+    cart.forEach(item => {
+      total += item.price;
+      const li = document.createElement("li");
+      li.innerText = `${item.name} — ${item.price}₸`;
+      cartItems.appendChild(li);
+    });
+
+    cartCount.innerText = cart.length;
+    totalPriceEl.innerText = total;
+  }
+
+  function showCart() {
+    cartDiv.style.display = cartDiv.style.display === "none" ? "block" : "none";
+  }
+
+  // Скрываем корзину при загрузке
+  cartDiv.style.display = "none";
+function checkout() {
+  if (cart.length === 0) {
+    alert("Ваша корзина пуста.");
+    return;
+  }
+
+  let summary = "Вы оформляете заказ на следующие товары:\n\n";
+  cart.forEach((item, index) => {
+    summary += `${index + 1}. ${item.name} — ${item.price}₸\n`;
+  });
+
+  summary += `\nИтого: ${cart.reduce((sum, item) => sum + item.price, 0)}₸`;
+
+  alert(summary);
+
+  // ✅ Уведомление об успешном заказе
+  alert("✅ Заказ успешно оформлен! Спасибо за покупку.");
+
+  // Очистка корзины
+  cart = [];
+  updateCart();
+  cartDiv.style.display = "none";
+}
+function toggleTheme() {
+  document.body.classList.toggle("dark-mode");
+  const themeBtn = document.getElementById("theme-toggle");
+  if (document.body.classList.contains("dark-mode")) {
+    themeBtn.innerText = "☀️ Светлая тема";
+  } else {
+    themeBtn.innerText = "🌙 Тёмная тема";
+  }
+}
+
+
+</script>
+
+
+</body>
+</html>
